@@ -1,0 +1,340 @@
+@charset "UTF-8";
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 16px;
+	line-height: 1.5;
+	font-style: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	color: #333;
+	background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+	margin-top: 0;
+	line-height: 1.5;
+}
+
+h2 {
+	font-size: 44px;
+	color: #21243d;
+}
+
+p {
+	margin-top: 0;
+	text-align: justify;
+	font-size: 16px;
+	color: #21243d;
+}
+
+address {
+	font-style: normal;
+}
+
+a {
+	color: #666;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	color: #000;
+	text-decoration: none;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+.sp-only {
+	display: none;
+}
+
+.pc-only {
+	display: block;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+section {
+	padding: 60px 0;
+}
+
+header {
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 90px;
+}
+
+.header-logo-menu {
+	margin-left: 70%;
+}
+
+header li {
+	display: inline-block;
+	padding: 0 30px;
+	text-align: right;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.first-content-txt p {
+	width: 497;
+	height: 66px;
+}
+
+.first-content-box {
+	display: flex;
+	align-items: center;
+	margin-top: 60px auto 40px;
+}
+
+.first-content-img {
+	margin-left: 80px;
+	width: 243px;
+	height: 243px;
+}
+
+.first-content-btn {
+	background-color: #ff6464;
+	width: 208px;
+	height: 47px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.first-content-btn a {
+	color: #fff;
+}
+
+.hamburger-menu {
+	width: 35px;
+	height: 5px;
+	background-color: black;
+	margin: 6px 0;
+}
+
+/* second-contents */
+
+.second-content {
+	width: 100%;
+	margin: 0 auto;
+	background-color: #edf7fa;
+	height: 396px;
+	margin: 30px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.second-content-option {
+	padding-top: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.second-content-option-left p {
+	font-size: 22px;
+}
+
+.second-content-option-right a {
+	font-size: 16px;
+	color: #00a8cc;
+}
+
+.second-content-box {
+	display: flex;
+	justify-content: space-between;
+}
+
+.second-content-box-left {
+	background-color: #fff;
+	color: #21243d;
+	height: 295px;
+	width: 48%;
+	padding: 20px;
+}
+
+#gnav-content {
+	position: fixed;
+	top: 0;
+	left: -100%;
+	z-index: 100;
+	width: 100%;
+	max-width: 240px;
+	box-shadow: 6px 0 25px rgba(0, 0, 0, 0.15);
+	transition: 0.3s;
+}
+
+ul.gnav-list {
+	background: #d9c2e5;
+	padding: 0;
+	height: 100vh;
+	text-align: center;
+}
+
+ul.gnav-list li {
+	display: block;
+}
+
+ul.gnav-list li a {
+	display: block;
+	padding: 1.5em;
+	color: #fff;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+ul.gnav-list li a::first-line {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.gnav-hidden {
+	display: none;
+}
+
+/**/
+
+.gnav-btn {
+	display: block;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 100;
+	width: 40px;
+	height: 40px;
+	background: #fff url("img/sozai_cman_jp_20210701201952.png") center center
+		no-repeat;
+}
+
+#gnav-black {
+	display: none;
+	position: fixed;
+	z-index: 90;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#gnav-input:checked ~ #gnav-btn {
+	background: #1b9aaa url("img/gnav-btn-close.png") center center no-repeat;
+}
+#gnav-input:checked ~ #gnav-black {
+	display: block;
+}
+
+#gnav-input:checked ~ #gnav-content {
+	left: 0;
+}
+
+.second-content-box-left h2 {
+	font-size: 35px;
+	font-style: bold;
+	margin-bottom: 17px;
+}
+
+.second-content-box-left h3 {
+	font-size: 23px;
+	margin-bottom: 15px;
+}
+
+.second-content-box-left　p {
+	font-size: 20px;
+	font-family: heebo;
+	font-style: regular;
+}
+
+.third-content {
+	display: flex;
+}
+
+.third-content-img img {
+	width: 246px;
+	height: 180px;
+	flex: 1;
+}
+
+.third-content-txt {
+	width: 594px;
+	height: 93px;
+	margin-left: 18px;
+}
+
+.third-content-txt h2 {
+	font-size: 30px;
+}
+
+.Performance {
+	display: flex;
+}
+
+.year {
+	background-color: #142850;
+	color: #fff;
+	font-size: 18px;
+	width: 62px;
+	height: 25px;
+	border-radius: 16px;
+	text-align: center;
+}
+
+.Description {
+	margin-left: 36px;
+	color: #8695a4;
+}
+
+.txt {
+	width: 594px;
+	height: 93px;
+	display: flex;
+}
+
+.border {
+	margin: 20px 0 30px;
+	border-bottom: 1px solid grey;
+}
+
+.sns-logo {
+	display: flex;
+	justify-content: center;
+}
+
+.sns-logo a {
+	margin: 134px 20px 0;
+}
+
+.last {
+	font-size: 14px;
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (max-width: 1145px) {
+	.sp-only {
+		display: block;
+	}
+
+	.pc-only {
+		display: none;
+	}
+
+	.container {
+		display: flex;
+		flex-flow: column;
+	}
+}
